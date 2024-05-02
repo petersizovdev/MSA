@@ -1,18 +1,30 @@
 import styles from "./header.module.css";
 import Logo from "../../assets/svg/logo.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className={styles.header}>
-      <a className={styles.logo} href="/">
+      <Link className={styles.logo} to="/">
         <img src={Logo} alt="" />
-      </a>
+      </Link>
+
       <ul className={styles.nav}>
-        <li><a href="/">Главная</a></li>
-        <li><a href="/about">Обо мне</a></li>
-        <li><a href="/services">Услуги</a></li>
-        <li><a href="/blog">Блог</a></li>
-        <li><a href="/contacts">Контакты</a></li>
+        <li>
+          <Link to="/">Главная</Link>
+        </li>
+        <li>
+          <Link to="/about">Обо мне</Link>
+        </li>
+        <li>
+          <Link to="/service">Услуги</Link>
+        </li>
+        <li>
+          <Link to="/blog">Блог</Link>
+        </li>
+        <li>
+          <Link to="/contact">Контакты</Link>
+        </li>
       </ul>
     </div>
   );

@@ -14,7 +14,9 @@
   font-family: "Geometria-Italic";
   src: url(./assets/font/Geometria-Italic.ttf);
 }
-
+* {
+  border: 1px solid red;
+}
 :root {
   --black: #000;
   --white: #f9fafc;

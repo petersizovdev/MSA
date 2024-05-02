@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  justify-content: end;
+  padding: 5%;
+  font-family: Geometria-Light;
+  background-color: var(--green);
+  color: var(--white);
+}
+.footerColumn{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 1rem;
+}
+.footeLink {
+  text-decoration: underline;
+}
