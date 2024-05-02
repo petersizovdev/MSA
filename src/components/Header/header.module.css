@@ -1,9 +1,8 @@
 .header {
   display: flex;
-
   align-items: center;
   font-family: Geometria-Light;
-  font-size: 1.5rem;
+ 
   padding: 0 5%;
 }
 

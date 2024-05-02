@@ -15,7 +15,12 @@
   src: url(./assets/font/Geometria-Italic.ttf);
 }
 * {
+  margin: 0;
+  padding: 0;
   border: 1px solid red;
+}
+*:focus {
+  border: 0;
 }
 :root {
   --black: #000;
@@ -32,6 +37,7 @@
 html {
   font-size: 16px;
 }
+
 body {
   width: 100%;
   min-height: 100svh;
@@ -45,11 +51,17 @@ body {
   );
   color: var(--black);
 }
-* {
-  margin: 0;
-  padding: 0;
+h1 {
+  font-size: 4rem;
+  font-family: Geometria-ExtraBold;
+  color: var(--green);
+}
+p {
+  font-size: 2rem;
+  font-family: Geometria-Light;
 }
 a {
   text-decoration: none;
   color: inherit;
+  font-size: 1.5rem;
 }

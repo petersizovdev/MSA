@@ -1,0 +1,9 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  margin: 10% 0;
+}
+.leftColumnText {
+  margin-bottom: 2%;
+}

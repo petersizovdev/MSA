@@ -1,3 +1,9 @@
 .accent {
-  background-color: #FFB068;
+  background-color: var(--orange);
+  color: var(--white);
+  border: 0;
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  font-family: Geometria-Medium;
 }
