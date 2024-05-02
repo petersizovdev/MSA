@@ -5,12 +5,13 @@
   font-family: Geometria-Light;
   background-color: var(--green);
   color: var(--white);
+  margin-top: 10%;
 }
-.footerColumn{
-    display: flex;
-    flex-direction: column;
-    text-align: end;
-    gap: 1rem;
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  gap: 1rem;
 }
 .footeLink {
   text-decoration: underline;

@@ -1,6 +1,18 @@
 .wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.important {
+  padding-left: 5%;
+}
+.importantCard {
+  width: 70%;
+  padding: 2.5% 5%;
+  margin-left: auto;
+  background-color: var(--light-gray);
+}
+.importantCard h1,
+p {
+  margin-bottom: 1.5rem;
+}
