@@ -4,6 +4,28 @@
   padding-left: 5%;
   margin: 10% 0;
 }
+.hero2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5%;
+  margin: 10% 0;
+}
+
 .leftColumnText {
   margin-bottom: 2%;
+}
+.leftColumnText2 {
+  margin-bottom: 5%;
+}
+.ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 10%;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10%;
 }
