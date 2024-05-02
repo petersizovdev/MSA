@@ -1,8 +1,9 @@
 .hero {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-left: 5%;
-  margin: 10% 0;
+  margin: 5% 0 10% 0;
 }
 .hero2 {
   display: flex;

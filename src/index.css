@@ -43,14 +43,7 @@ html {
 body {
   width: 100%;
   min-height: 100svh;
-  background-image: linear-gradient(
-    to top,
-    #f9fafc,
-    #f3f6f9,
-    #ecf2f6,
-    #e4eff3,
-    #ddebee
-  );
+  background-color: #e8f3f4;
   color: var(--black);
 }
 h1 {
