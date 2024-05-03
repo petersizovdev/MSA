@@ -1,0 +1,35 @@
+.reviews {
+  display: flex;
+  margin: 10% 5% 0 5%;
+}
+.reviewsCard {
+  padding: 2.5% 0;
+  margin-right: auto;
+}
+.reviewsCard h1,
+p {
+  margin-bottom: 1.5rem;
+}
+.slidernav {
+  display: flex;
+  justify-content: center;
+  gap: 45%;
+  max-height: 5.25rem;
+}
+.cardCorusel {
+  display: flex;
+}
+.card {
+  background-color: var(--white);
+  border-radius: 2rem;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  max-width: 70rem;
+}
+.cardReviewer {
+  display: flex;
+  align-items: center;
+  gap: 3%;
+}
