@@ -16,3 +16,21 @@
 p {
   margin-bottom: 1.5rem;
 }
+.dualContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+  gap: 8rem;
+}
+.dualContainerTop {
+  display: flex;
+  justify-content: space-between;
+}
+.dualContainerTop p {
+  text-align: end;
+  max-width: 60%;
+}
+.dualContainerBottom {
+  display: flex;
+  justify-content: space-between;
+}
