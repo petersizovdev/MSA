@@ -1,16 +1,17 @@
 import AboutCards from "../components/Cards/AboutCards";
 import HeroAbout from "../components/Hero/HeroAbout";
 import HeroList from "../components/Hero/HeroList";
-import HeroSecond from "../components/Hero/HeroSecond";
+
 import "../App.css";
 import Button from "../components/Button/Button";
+import Education from "../components/Education/Education";
 
 const About = () => {
   return (
     <>
       <HeroAbout />
       <AboutCards />
-      <HeroSecond />
+      <Education />
       <HeroList />
       <div className="important">
         <div className="importantCard">

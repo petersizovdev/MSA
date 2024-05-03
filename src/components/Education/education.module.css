@@ -1,5 +1,41 @@
-.education{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.education {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5%;
+}
+.leftColumn {
+  width: 30%;
+}
+.rightColumn {
+  width: 60%;
+}
+.sliderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slides img {
+  width: 100%;
+}
+.slidernav {
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+  margin-top: 15%;
+}
+
+.rightColumnText {
+  margin-bottom: 2%;
+}
+.ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10%;
 }
