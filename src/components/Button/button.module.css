@@ -6,6 +6,7 @@
   padding: 0.5rem 4rem;
   border-radius: 2rem;
   font-family: Geometria-Medium;
+  cursor: pointer;
 }
 .round {
   background-color: var(--orange);
@@ -15,4 +16,5 @@
   padding: 0.5rem 1.5rem;
   border-radius: 100%;
   font-family: Geometria-Medium;
+  cursor: pointer;
 }
