@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from "../Button/Button";
 import styles from "./cardbutton.module.css";
 
@@ -11,7 +12,9 @@ const CardButtonArticle1 = () => {
           диагностики.
         </p>
       </div>
-      <Button>Читать</Button>
+      <Link to="/service">
+            <Button >Читать</Button>
+          </Link>
     </div>
   );
 };

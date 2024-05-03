@@ -7,6 +7,8 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import ServiceOffline from './pages/ServiceOffline';
+import ServiceOnline from './pages/ServiceOnline';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/service" element={<Service />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/offline" element={<ServiceOffline/>}/>
+        <Route path="/online" element={<ServiceOnline/>}/>
       </Routes>
       <Footer />
     </>

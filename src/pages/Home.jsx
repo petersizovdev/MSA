@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <>
+    <div id="start">
       <Hero />
       <HomeCards />
       <HeroSecond />
@@ -24,11 +24,12 @@ const Home = () => {
             образу жизни, обсуждение волнующих подростков вопросов.
           </p>
           <Link to="/service">
-            <Button to="/service">Записаться</Button>
+            <Button >Записаться</Button>
           </Link>
+       
         </div>
       </div>
-    </>
+      </div>
   );
 };
 

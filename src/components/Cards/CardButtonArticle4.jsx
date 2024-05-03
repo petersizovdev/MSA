@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from "../Button/Button";
 import styles from "./cardbutton.module.css";
 
@@ -11,7 +12,9 @@ const CardButtonArticle2 = () => {
           заб,
         </p>
       </div>
-      <Button>Записаться</Button>
+      <Link to="/online">
+            <Button >Записаться</Button>
+          </Link>
     </div>
   );
 };

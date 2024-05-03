@@ -1,6 +1,7 @@
 import styles from "./hero.module.css";
 import Hero1 from "../../assets/img/hero1.png";
 import Button from "../Button/Button";
+import { Link } from 'react-router-dom';
 
 const HeroAbout = () => {
   return (
@@ -14,7 +15,9 @@ const HeroAbout = () => {
           вопросы эндокринной патологии <br /> ребенка. Лечу бережно
           и&nbsp;эмпатично
         </p>
-        <Button>Записаться</Button>
+        <Link to="/service">
+            <Button>Записаться</Button>
+          </Link>
       </div>
       <div className={styles.heroImage}>
         <img src={Hero1} alt="" />
