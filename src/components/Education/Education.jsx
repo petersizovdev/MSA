@@ -3,7 +3,16 @@ import Icon1 from "../../assets/svg/icon7.svg";
 import Icon2 from "../../assets/svg/icon8.svg";
 import Icon3 from "../../assets/svg/icon9.svg";
 import Cert1 from "../../assets/img/cert1.png";
+import Cert2 from "../../assets/img/cert2.png";
+import Cert3 from "../../assets/img/cert3.png";
 
+import {Swiper, SwiperSlide } from "swiper/react";
+import { EffectFade,  Autoplay } from "swiper/modules";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
 
 const Education = () => {
   return (
@@ -11,9 +20,32 @@ const Education = () => {
       <div className={styles.leftColumn}>
         <div className={styles.sliderContainer}>
           <div className={styles.slides}>
-            <img src={Cert1} alt="" />
+            <Swiper
+              spaceBetween={30}
+              effect={"fade"}
+              centeredSlides={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={false}
+              modules={[EffectFade, Autoplay]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <img src={Cert1} alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Cert2} alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Cert3} alt="" />
+              </SwiperSlide>
+            </Swiper>
           </div>
- 
         </div>
       </div>
 
