@@ -5,9 +5,9 @@ import Icon3 from "../../assets/svg/icon9.svg";
 import Cert1 from "../../assets/img/cert1.png";
 import Cert2 from "../../assets/img/cert2.png";
 import Cert3 from "../../assets/img/cert3.png";
-
-import {Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade,  Autoplay } from "swiper/modules";
+// Import Swiper
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectFade, Autoplay } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -21,17 +21,10 @@ const Education = () => {
         <div className={styles.sliderContainer}>
           <div className={styles.slides}>
             <Swiper
-              spaceBetween={30}
               effect={"fade"}
-              centeredSlides={true}
               autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
+                delay: 1000,
               }}
-              pagination={{
-                clickable: true,
-              }}
-              navigation={false}
               modules={[EffectFade, Autoplay]}
               className="mySwiper"
             >
