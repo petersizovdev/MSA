@@ -1,24 +1,32 @@
 .reviews {
   display: flex;
-  margin: 10% 5% 0 5%;
+  flex-direction: column;
+  margin: 10% 0;
+  overflow: hidden;
 }
-.reviewsCard {
-  padding: 2.5% 0;
-  margin-right: auto;
+
+.reviewsTop {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
 }
-.reviewsCard h1,
-p {
-  margin-bottom: 1.5rem;
+.reviewsCarusel {
+  width: 100%;
+  display: flex;
+  gap: 5%;
+  overflow: hidden;
+  margin-top: 2.5%;
+  padding-left: 30%;
+  z-index: 0;
 }
+
 .slidernav {
   display: flex;
   justify-content: center;
   gap: 45%;
   max-height: 5.25rem;
 }
-.cardCorusel {
-  display: flex;
-}
+
 .card {
   background-color: var(--white);
   border-radius: 2rem;
@@ -26,8 +34,9 @@ p {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  max-width: 70rem;
+  transition: transform 0.5s; /* Add smooth transition */
 }
+
 .cardReviewer {
   display: flex;
   align-items: center;
