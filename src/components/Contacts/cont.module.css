@@ -9,9 +9,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
 }
-
+.contactContainer img {
+  width: 80%;
+  max-width: 35rem;
+}
 
 .leftColumn h2 {
   margin-bottom: 2rem;
+}
+@media (max-width: 1023px) {
+  .leftColumn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .contactContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }

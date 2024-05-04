@@ -37,3 +37,40 @@
 .orange {
   background-color: var(--light-orange);
 }
+@media (max-width: 769px) {
+  .cardsContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    max-width: 80%;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+  }
+  .red {
+    background-color: var(--light-red);
+  }
+  .green {
+    background-color: var(--light-green);
+  }
+  .orange {
+    background-color: var(--light-orange);
+  }
+}
+@media (max-width: 425px) {
+  .cardsTopText {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

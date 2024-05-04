@@ -5,7 +5,7 @@ import Dot from "../../assets/svg/dot.svg";
 const HeroSecond = () => {
   return (
     <div className={styles.hero2}>
-      <div className={styles.heroImage}>
+      <div className={styles.heroImage} id={styles.hero2}>
         <img src={Hero2} alt="" />
       </div>
       <div className={styles.leftColumn}>

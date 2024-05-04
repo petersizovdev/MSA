@@ -44,6 +44,9 @@
   justify-content: space-between;
   gap: 2.5rem;
 }
+.cardForm h2 {
+  text-align: center;
+}
 .formRow {
   display: flex;
   justify-content: space-between;
@@ -63,4 +66,9 @@
   border-radius: 2rem;
   font-family: Geometria-Medium;
   cursor: pointer;
+}
+@media (max-width: 760px) {
+  .cardButton {
+    padding: 0 5%;
+  }
 }
