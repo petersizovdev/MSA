@@ -1,6 +1,7 @@
 import styles from "./header.module.css";
 import Logo from "../../assets/svg/logo.svg";
 import { Link } from "react-router-dom";
+import Menu from "../Menu/Menu";
 
 const Header = () => {
   return (
@@ -8,7 +9,9 @@ const Header = () => {
       <Link className={styles.logo} to="/">
         <img src={Logo} alt="" />
       </Link>
-
+      <div className={styles.menu}>
+        <Menu />
+      </div>
       <ul className={styles.nav}>
         <li>
           <Link to="/">Главная</Link>
