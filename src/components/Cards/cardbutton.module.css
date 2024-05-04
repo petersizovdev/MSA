@@ -54,3 +54,13 @@
   width: 54%;
   resize: none;
 }
+.accent {
+  background-color: var(--orange);
+  color: var(--white);
+  border: 0;
+  font-size: 2rem;
+  padding: 0.5rem 4rem;
+  border-radius: 2rem;
+  font-family: Geometria-Medium;
+  cursor: pointer;
+}

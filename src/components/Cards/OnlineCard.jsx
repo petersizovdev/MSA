@@ -1,9 +1,35 @@
-import { useState } from "react";
+import { useState,useRef } from "react";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import styles from "./cardbutton.module.css";
+import emailjs from '@emailjs/browser';
+
 
 const OnlineCard = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+  
+    emailjs
+      .sendForm('service_m64mydc', 'template_i9g4irj', form.current, {
+        publicKey: '-AoxajydB39rDgEZA',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          setIsActive("third"); // Установка состояния на "third" при успешной отправке
+        })
+      .catch((error) => {
+        console.error('FAILED...', error);
+        alert('Ошибка отправки - повторите попытку');
+      });
+  };
+  
+
+
+
+
   const [isActive, setIsActive] = useState("first");
 
   return (
@@ -32,23 +58,26 @@ const OnlineCard = () => {
         <div className={styles.cardButtonOffline}>
           <div className={styles.cardForm}>
             <h2>Запись на онлайн-консультацию</h2>
-            <form action="">
-              <label className={styles.formRow} htmlFor="fio">
+            <form ref={form} onSubmit={sendEmail}>
+              <label  className={styles.formRow} htmlFor="fio">
                 ФИО
-                <input type="name" id="fio" />
+                <input type="text" name="name" id="fio" required/>
               </label>
               <label className={styles.formRow} htmlFor="date">
                 Дата записи
-                <input type="text" id="date" />
+                <input type='date' name="date" id="date" required/>
               </label>
 
               <label className={styles.formRow} htmlFor="msg">
                 Комментарий
-                <textarea name="message" id="msg"></textarea>
+                <textarea name="message" id="msg" required></textarea>
               </label>
+              <button type="submit" className={styles.accent}>Записаться</button>
+              
             </form>
           </div>
-          <Button onClick={() => setIsActive("third")}>Записаться</Button>
+        
+           
         </div>
       )}
 

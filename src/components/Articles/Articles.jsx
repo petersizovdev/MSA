@@ -19,7 +19,10 @@ const Articles = () => {
     <div className={styles.blogText}>
       <h1>{articleArr[currentArticleIndex].title}</h1>
       <h3>{articleArr[currentArticleIndex].desc}</h3>
-      <p>{articleArr[currentArticleIndex].content}</p>
+      {articleArr[currentArticleIndex].content.map((paragraph, index) => (
+        <p key={index}>{paragraph}</p>
+      ))}
+      <p>{articleArr[currentArticleIndex].author}</p>
     </div>
   );
 
