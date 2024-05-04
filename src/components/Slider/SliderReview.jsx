@@ -47,7 +47,7 @@ const SliderReview = () => {
             </span>
 
             <div className={styles.cardReviewer}>
-              <img src={Reviewer1} alt="" />
+              <img src={Reviewer2} alt="" />
               <h2>
                 Мама Евы, 2 года <br /> Врожденный гиперинсулинизм
               </h2>

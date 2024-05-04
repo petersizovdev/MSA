@@ -3,7 +3,7 @@ import Icon1 from "../../assets/svg/icon7.svg";
 import Icon2 from "../../assets/svg/icon8.svg";
 import Icon3 from "../../assets/svg/icon9.svg";
 import Cert1 from "../../assets/img/cert1.png";
-import ButtonRound from "../Button/ButtonRound";
+
 
 const Education = () => {
   return (
@@ -13,14 +13,7 @@ const Education = () => {
           <div className={styles.slides}>
             <img src={Cert1} alt="" />
           </div>
-          <div className={styles.slidernav}>
-            <ButtonRound>
-              <b>ᐸ</b>
-            </ButtonRound>
-            <ButtonRound>
-              <b>ᐳ</b>
-            </ButtonRound>
-          </div>
+ 
         </div>
       </div>
 
